@@ -1,0 +1,54 @@
+body {
+	background: #ccecf2;
+}
+
+h1 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 4vw;
+}
+
+.reset {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  font-size: 0px;
+  max-width: 65%;
+  max-height: 65%;
+  background: white;
+}
+
+.cell {
+  display: inline-block;
+  vertical-align: top;
+  border: solid 0.2px black;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-height: 420px) {
+  #container {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .reset {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
